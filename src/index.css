@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .header {
@@ -40,7 +40,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 7rem;
   background: url("./components//assets/pattern-circles.svg") no-repeat center;
   z-index: 2;
 }
@@ -52,4 +51,78 @@ body {
 
 .header p {
   color: var(--grayish-blue);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--white);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  border-radius: 11px;
+  position: relative;
+}
+
+.toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-grayish-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 4px;
+  background-color: var(--white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle input:checked + .slider {
+  background-color: var(--strong-cyan);
+}
+
+.toggle input:focus + .slider {
+  box-shadow: 0 0 1px var(--strong-cyan);
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle .slider.round {
+  border-radius: 20px;
+}
+
+.toggle .slider.round:before {
+  border-radius: 50%;
 }
