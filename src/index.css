@@ -41,11 +41,13 @@ body {
   align-items: center;
   justify-content: center;
   background: url("./components//assets/pattern-circles.svg") no-repeat center;
+  padding-bottom: 2rem;
   z-index: 2;
 }
 
 .heading {
   font-size: 1.5rem;
+  color: var(--dark-desaturated-blue);
   z-index: 3;
 }
 
@@ -56,18 +58,20 @@ body {
 /* Card */
 
 .container {
-  max-width: 350px;
+  max-width: 390px;
   margin: 0 auto;
   padding-top: 2rem;
 }
 
 .card {
   background-color: var(--white);
+  width: 350px;
   height: 550px;
+  padding: 1rem 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 3rem;
   border-radius: 11px;
   position: relative;
   color: var(--grayish-blue);
@@ -142,23 +146,23 @@ body {
 }
 
 .toggle {
-  font-size: .68rem;
+  font-size: 0.7rem;
   width: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 2.5rem;
+  padding: 1rem 2.7rem 3rem 3rem;
 }
 
 .toggle .billing__monthly {
-  padding-right: .6rem;
+  padding-right: 0.6rem;
 }
 
 .toggle .switch {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .toggle .billing__discount {
-  padding: .1rem .4rem;
+  padding: 0.1rem 0.4rem;
   background-color: var(--light-grayish-red);
   border-radius: 20px;
   color: var(--light-red);
@@ -168,6 +172,19 @@ body {
 /* Line */
 
 .line {
-    width: 100%;
-    border-color: #1A85FD;
-  }
+  width: 100%;
+  border-color: var(--light-grayish-blue);
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: var(--grayish-blue);
+}
+
+.info p {
+  padding-bottom: 1rem;
+}
