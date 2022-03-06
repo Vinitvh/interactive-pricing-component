@@ -5,17 +5,18 @@ function Card() {
     <section>
       <div className="container">
         <div className="card">
-          <p>100k PAGEVIEWS</p>
-          <p>$16.00/month</p>
+          <p className="heading__views">100k PAGEVIEWS</p>
+          <p className="pricing">$16.00/month</p>
           <div className="toggle">
-            <span>Monthly Billing</span>
+            <span className="billing__monthly">Monthly Billing</span>
             <label className="switch">
-              <input type="checkbox" checked />
+              <input type="checkbox" />
               <span className="slider round"></span>
             </label>
-            <span>Yearly Billing</span>
-            <span>-25%</span>
+            <span className="billing__yearly">Yearly Billing</span>
+            <span className="billing__discount">-25%</span>
           </div>
+          <hr className="line"/>
         </div>
       </div>
     </section>

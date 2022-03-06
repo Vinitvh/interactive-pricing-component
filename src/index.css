@@ -53,28 +53,33 @@ body {
   color: var(--grayish-blue);
 }
 
+/* Card */
+
 .container {
-  max-width: 500px;
+  max-width: 350px;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .card {
   background-color: var(--white);
-  height: 300px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 1rem 3rem;
   border-radius: 11px;
   position: relative;
+  color: var(--grayish-blue);
 }
+
+/* Toggle switch */
 
 .toggle .switch {
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 28px;
+  height: 26px;
 }
 
 .toggle .switch input {
@@ -101,7 +106,7 @@ body {
   height: 20px;
   width: 20px;
   left: 2px;
-  bottom: 4px;
+  bottom: 3px;
   background-color: var(--white);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -126,3 +131,43 @@ body {
 .toggle .slider.round:before {
   border-radius: 50%;
 }
+
+/* Billing  */
+.card .heading__views {
+  padding: 1rem 0 2rem 0;
+}
+
+.card .pricing {
+  padding-bottom: 2rem;
+}
+
+.toggle {
+  font-size: .68rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.toggle .billing__monthly {
+  padding-right: .6rem;
+}
+
+.toggle .switch {
+  margin-right: .5rem;
+}
+
+.toggle .billing__discount {
+  padding: .1rem .4rem;
+  background-color: var(--light-grayish-red);
+  border-radius: 20px;
+  color: var(--light-red);
+  margin-left: 3px;
+}
+
+/* Line */
+
+.line {
+    width: 100%;
+    border-color: #1A85FD;
+  }
